@@ -1,50 +1,26 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Zap, Cable, Settings, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
+import schneiderLogo from "@/assets/schneider-logo.svg";
+import lappLogo from "@/assets/lapp-logo.svg";
+import keiLogo from "@/assets/kei-logo.png";
 
 const ProductsSection = () => {
   const productCategories = [
     {
       brand: "Schneider Electric",
-      icon: <Zap className="w-12 h-12 text-primary" />,
-      description: "World-leading electrical solutions and automation products",
-      products: [
-        "Switchgear & Circuit Breakers",
-        "Industrial Control & Automation",
-        "Power Management Systems",
-        "Variable Frequency Drives",
-        "HMI & SCADA Solutions",
-        "Motor Control Centers"
-      ],
-      color: "from-primary to-primary-dark"
+      logo: schneiderLogo,
+      description: "World-leading electrical solutions and automation products"
     },
     {
       brand: "LAPP Cable",
-      icon: <Cable className="w-12 h-12 text-primary" />,
-      description: "Premium cables and connection technology for industry",
-      products: [
-        "Power & Control Cables",
-        "Data Communication Cables",
-        "Servo & Encoder Cables",
-        "Industrial Ethernet Cables",
-        "Flexible & Drag Chain Cables",
-        "Custom Cable Solutions"
-      ],
-      color: "from-primary-light to-primary"
+      logo: lappLogo,
+      description: "Premium cables and connection technology for industry"
     },
     {
-      brand: "KIE Cable",
-      icon: <Settings className="w-12 h-12 text-primary" />,
-      description: "Specialized industrial cables for demanding applications",
-      products: [
-        "High Temperature Cables",
-        "Chemical Resistant Cables",
-        "Oil & Gas Industry Cables",
-        "Marine & Offshore Cables",
-        "Mining Industry Cables",
-        "Nuclear Grade Cables"
-      ],
-      color: "from-primary-dark to-primary-light"
+      brand: "KEI Cable",
+      logo: keiLogo,
+      description: "Specialized industrial cables for demanding applications"
     }
   ];
 
@@ -67,9 +43,13 @@ const ProductsSection = () => {
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
             {productCategories.map((category, index) => (
               <Card key={index} className="group hover-lift shadow-professional border-0 card-gradient overflow-hidden">
-                <CardHeader className="text-center pb-4">
-                  <div className={`w-20 h-20 mx-auto rounded-full bg-gradient-to-br ${category.color} flex items-center justify-center mb-4 shadow-hero`}>
-                    {category.icon}
+                <CardHeader className="text-center pb-8">
+                  <div className="w-32 h-20 mx-auto mb-6 flex items-center justify-center bg-white rounded-lg shadow-md p-4">
+                    <img 
+                      src={category.logo} 
+                      alt={`${category.brand} logo`}
+                      className="max-w-full max-h-full object-contain"
+                    />
                   </div>
                   <CardTitle className="text-2xl font-bold text-foreground mb-2">
                     {category.brand}
@@ -79,17 +59,9 @@ const ProductsSection = () => {
                   </p>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <div className="space-y-3">
-                    {category.products.map((product, productIndex) => (
-                      <div key={productIndex} className="flex items-center gap-3 text-foreground hover:text-primary transition-professional">
-                        <ChevronRight className="w-4 h-4 text-primary flex-shrink-0" />
-                        <span className="text-sm">{product}</span>
-                      </div>
-                    ))}
-                  </div>
                   <Button 
                     variant="outline" 
-                    className="w-full mt-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground group-hover:shadow-lg transition-professional"
+                    className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground group-hover:shadow-lg transition-professional"
                   >
                     View Products
                     <ChevronRight className="ml-2 w-4 h-4" />
