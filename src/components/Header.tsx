@@ -8,8 +8,8 @@ const Header = () => {
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
-    { name: "Products", href: "#products" },
-    { name: "Industries", href: "#industries" },
+    { name: "Solutions", href: "#solutions" },
+    { name: "Partners", href: "#products" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -27,9 +27,9 @@ const Header = () => {
           <div className="flex items-center">
             <div className="text-2xl font-bold text-primary">
               AVM Electrical
-            </div>
-            <div className="ml-2 text-sm text-muted-foreground hidden sm:block">
-              & Automation
+              <span className="ml-2 font-bold text-primary">
+                & Automation
+              </span>
             </div>
           </div>
 
@@ -44,13 +44,7 @@ const Header = () => {
                 {item.name}
               </button>
             ))}
-            <Button 
-              variant="default" 
-              onClick={() => scrollToSection("#contact")}
-              className="bg-primary hover:bg-primary-dark text-primary-foreground"
-            >
-              Get Quote
-            </Button>
+
           </nav>
 
           {/* Mobile Menu Button */}
@@ -75,15 +69,7 @@ const Header = () => {
                   {item.name}
                 </button>
               ))}
-              <div className="px-4 pt-2">
-                <Button 
-                  variant="default" 
-                  onClick={() => scrollToSection("#contact")}
-                  className="w-full bg-primary hover:bg-primary-dark text-primary-foreground"
-                >
-                  Get Quote
-                </Button>
-              </div>
+
             </div>
           </nav>
         )}

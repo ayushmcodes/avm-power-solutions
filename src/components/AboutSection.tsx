@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Users, Trophy, Globe } from "lucide-react";
+import { CheckCircle, Users, Trophy } from "lucide-react";
 
 const AboutSection = () => {
   const features = [
@@ -13,11 +13,7 @@ const AboutSection = () => {
       title: "Expert Team",
       description: "Certified professionals with deep industry knowledge"
     },
-    {
-      icon: <Globe className="w-8 h-8 text-primary" />,
-      title: "Global Reach",
-      description: "Serving industries across multiple sectors worldwide"
-    },
+
     {
       icon: <CheckCircle className="w-8 h-8 text-primary" />,
       title: "Quality Assured",
@@ -99,18 +95,20 @@ const AboutSection = () => {
           </div>
 
           {/* Stats Section */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="space-y-2">
-              <div className="text-3xl md:text-4xl font-bold text-primary">500+</div>
-              <div className="text-muted-foreground">Projects Completed</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl md:text-4xl font-bold text-primary">24/7</div>
-              <div className="text-muted-foreground">Support Available</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl md:text-4xl font-bold text-primary">99%</div>
-              <div className="text-muted-foreground">Customer Satisfaction</div>
+          <div className="bg-background/50 rounded-2xl p-8 backdrop-blur-sm border border-border/20">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+              <div className="space-y-3">
+                <div className="text-4xl md:text-5xl font-bold text-primary">500+</div>
+                <div className="text-muted-foreground font-medium">Projects Completed</div>
+              </div>
+              <div className="space-y-3">
+                <div className="text-4xl md:text-5xl font-bold text-primary">24/7</div>
+                <div className="text-muted-foreground font-medium">Support Available</div>
+              </div>
+              <div className="space-y-3">
+                <div className="text-4xl md:text-5xl font-bold text-primary">99%</div>
+                <div className="text-muted-foreground font-medium">Customer Satisfaction</div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,6 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ChevronRight } from "lucide-react";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import schneiderLogo from "@/assets/schneider-logo.svg";
 import lappLogo from "@/assets/lapp-logo.svg";
 import keiLogo from "@/assets/kei-logo.png";
@@ -31,7 +29,7 @@ const ProductsSection = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Products & Solutions
+              Partner Network
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Comprehensive range of industrial electrical products from world-renowned manufacturers. 
@@ -58,15 +56,7 @@ const ProductsSection = () => {
                     {category.description}
                   </p>
                 </CardHeader>
-                <CardContent className="pt-0">
-                  <Button 
-                    variant="outline" 
-                    className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground group-hover:shadow-lg transition-professional"
-                  >
-                    View Products
-                    <ChevronRight className="ml-2 w-4 h-4" />
-                  </Button>
-                </CardContent>
+
               </Card>
             ))}
           </div>
