@@ -70,31 +70,6 @@ const ProductsSection = () => {
               </Card>
             ))}
           </div>
-
-          {/* Additional Services */}
-          <div className="accent-gradient rounded-2xl p-8 md:p-12 text-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Custom Solutions & Technical Support
-            </h3>
-            <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Beyond our extensive product catalog, we offer custom engineering solutions, 
-              technical consultation, and comprehensive support to meet your specific requirements.
-            </p>
-            <div className="grid md:grid-cols-3 gap-6 text-center">
-              <div className="space-y-2">
-                <h4 className="font-semibold text-foreground">Engineering Support</h4>
-                <p className="text-sm text-muted-foreground">Custom design and configuration services</p>
-              </div>
-              <div className="space-y-2">
-                <h4 className="font-semibold text-foreground">Technical Training</h4>
-                <p className="text-sm text-muted-foreground">Product training and certification programs</p>
-              </div>
-              <div className="space-y-2">
-                <h4 className="font-semibold text-foreground">After-Sales Service</h4>
-                <p className="text-sm text-muted-foreground">Maintenance and warranty support</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

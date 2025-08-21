@@ -105,10 +105,6 @@ const AboutSection = () => {
               <div className="text-muted-foreground">Projects Completed</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl md:text-4xl font-bold text-primary">50+</div>
-              <div className="text-muted-foreground">Industry Partners</div>
-            </div>
-            <div className="space-y-2">
               <div className="text-3xl md:text-4xl font-bold text-primary">24/7</div>
               <div className="text-muted-foreground">Support Available</div>
             </div>

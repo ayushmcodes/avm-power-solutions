@@ -61,7 +61,7 @@ const ContactSection = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Get In Touch
+              Contact Us
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Ready to power your next project? Contact our expert team for quotes, 
